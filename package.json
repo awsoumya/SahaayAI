@@ -1,0 +1,16 @@
+{
+  "name": "sahaay-ai",
+  "version": "1.0.0",
+  "description": "Sahaay AI - From everyday problems to real-world action. Gemini-powered civic sanitation reporting, verification, and action planner.",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "start": "concurrently \"npm run start --prefix server\" \"npm run preview --prefix client\"",
+    "build": "npm run build --prefix client",
+    "test": "npm run test --prefix server",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

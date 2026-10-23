@@ -1,0 +1,827 @@
+[
+  {
+    "id": "REP-DEMO-BLR-01",
+    "issue_title": "Overflowing Municipal Garbage Bin at Indiranagar 12th Main",
+    "category": "overflowing_bin",
+    "problem_summary": "Secondary waste bin has been overflowing for 3 days with household waste scattering across the pedestrian walkway near Indiranagar Club.",
+    "input_types": [
+      "text",
+      "image"
+    ],
+    "location_json": {
+      "city": "Bengaluru",
+      "neighborhood": "Indiranagar",
+      "address": "Near Indiranagar Club, 12th Main Rd, HAL 2nd Stage",
+      "landmark": "Opposite Coffee Day Junction",
+      "latitude": 12.9719,
+      "longitude": 77.6412,
+      "postcode": "560038",
+      "ward_number": 89,
+      "ward_name": "Jogupalya (Indiranagar)",
+      "source": "user_provided",
+      "user_confirmation_required": false
+    },
+    "evidence_json": {
+      "user_reported_facts": [
+        "Waste has not been picked up by the morning auto-tippers for three consecutive days.",
+        "Stray animals are pulling plastic bags onto the road creating hazard for two-wheelers."
+      ],
+      "visible_image_observations": [
+        "Green municipal dump bin overflowing with mixed solid domestic waste.",
+        "Dispersed litter covering approximately 15 square meters of footpath."
+      ],
+      "ai_inferences": [
+        "High probability of odor complaints and drain choking during rain.",
+        "Violation of BBMP SWM By-law Section 7 on secondary bin maintenance."
+      ],
+      "uncertainties": [
+        "Whether door-to-door collection failed for the entire street or only this spot."
+      ]
+    },
+    "urgency_level": "needs_prompt_attention",
+    "urgency_details": {
+      "level": "needs_prompt_attention",
+      "reasons": [
+        "Pedestrian obstruction and uncontained organic waste in residential sector."
+      ],
+      "limitations": [
+        "Assessment based on citizen photograph and description."
+      ]
+    },
+    "recommended_actions_json": [
+      {
+        "step": 1,
+        "action": "Submit grievance to BBMP Sahaaya 2.0 or dial 1533",
+        "purpose": "Logs an official ticket under Karnataka Sakala Services Act (24-hr SLA)."
+      },
+      {
+        "step": 2,
+        "action": "Notify Ward 89 (Jogupalya) Junior Health Inspector",
+        "purpose": "Directs local pourakarmika beat supervisor to clear the spot."
+      }
+    ],
+    "missing_information": [],
+    "verification_json": {
+      "verification_status": "verified",
+      "authority_identified": {
+        "name": "Bruhat Bengaluru Mahanagara Palike (BBMP) - Solid Waste Management",
+        "portal_url": "https://bbmp.gov.in",
+        "mobile_app": "BBMP Sahaaya 2.0",
+        "helpline": "1533 / 080-22660000",
+        "established_sla": "24 hours under Sakala Services Act"
+      },
+      "verified_claims": [
+        {
+          "claim": "Location falls within BBMP East Zone jurisdiction.",
+          "status": "verified",
+          "basis": "Pin Code 560038 gazetted ward boundaries."
+        }
+      ],
+      "unverified_claims": [],
+      "authoritative_sources": [
+        {
+          "source_organization": "Bruhat Bengaluru Mahanagara Palike (BBMP)",
+          "source_title": "BBMP SWM Citizen Charter & Grievance Portal",
+          "official_url": "https://bbmp.gov.in",
+          "retrieved_at": "2026-10-23T07:12:55.028Z",
+          "confirms": "Designated municipal authority for Ward 89. Mandates 24-hour clearance of secondary collection points."
+        }
+      ],
+      "disclaimer": "Jurisdiction and helpline verified against BBMP Citizen Charter."
+    },
+    "complaint_subject": "Complaint regarding Overflowing Garbage Bin at Indiranagar 12th Main",
+    "complaint_body": "To,\nThe Assistant Executive Engineer (SWM) / Junior Health Inspector,\nWard 89, BBMP East Zone, Bengaluru.\n\nSubject: Urgent clearance of overflowing garbage bin at Indiranagar 12th Main\n\nRespected Sir/Madam,\n\nI am writing to draw your urgent attention to an uncollected garbage accumulation at 12th Main Road, near Indiranagar Club. The waste bin has been overflowing for over three days, and refuse is scattered over the footpath.\n\nKindly dispatch a sanitary vehicle to clear the waste and sanitize the spot with disinfectant powder.\n\nThank you,\nConcerned Citizen, Indiranagar Residents Welfare Association",
+    "status": "ready_to_submit",
+    "endorsements_count": 9,
+    "created_at": "2026-10-22T07:12:55.030Z",
+    "updated_at": "2026-10-22T07:12:55.030Z"
+  },
+  {
+    "id": "REP-DEMO-BLR-02",
+    "issue_title": "Severe Commercial Waste Accumulation on 80ft Road Koramangala",
+    "category": "uncollected_garbage",
+    "problem_summary": "Piles of wet restaurant food refuse and cardboard packaging dumped on road margin near 5th Block signal, attracting stray dogs and flies.",
+    "input_types": [
+      "text",
+      "image"
+    ],
+    "location_json": {
+      "city": "Bengaluru",
+      "neighborhood": "Koramangala",
+      "address": "80 Feet Road, 5th Block, Near Sony World Signal",
+      "landmark": "Opposite Koramangala Police Station Road",
+      "latitude": 12.9352,
+      "longitude": 77.6245,
+      "postcode": "560034",
+      "ward_number": 151,
+      "ward_name": "Koramangala",
+      "source": "user_provided",
+      "user_confirmation_required": false
+    },
+    "evidence_json": {
+      "user_reported_facts": [
+        "Unsegregated food waste dumped late evening by nearby eateries.",
+        "Passersby have to step into traffic lane to avoid black-spot."
+      ],
+      "visible_image_observations": [
+        "Large black garbage bags torn open with food waste spilled over 20ft pavement.",
+        "Cardboard cartons and wet biodegradable waste mixed together."
+      ],
+      "ai_inferences": [
+        "Direct breach of SWM Rules 2016 bulk waste generator compliance."
+      ],
+      "uncertainties": []
+    },
+    "urgency_level": "potentially_urgent",
+    "urgency_details": {
+      "level": "potentially_urgent",
+      "reasons": [
+        "Heavy foot-traffic commercial area with decomposing organic waste attracting vectors."
+      ],
+      "limitations": [
+        "Visual observation and citizen report."
+      ]
+    },
+    "recommended_actions_json": [
+      {
+        "step": 1,
+        "action": "Escalate to BBMP South Zone Health Officer & Marshals",
+        "purpose": "Issue spot fines to violating commercial establishments."
+      }
+    ],
+    "missing_information": [],
+    "verification_json": {
+      "verification_status": "verified",
+      "authority_identified": {
+        "name": "Bruhat Bengaluru Mahanagara Palike (BBMP) - Solid Waste Management",
+        "portal_url": "https://bbmp.gov.in",
+        "mobile_app": "BBMP Sahaaya 2.0",
+        "helpline": "1533",
+        "established_sla": "24 hours under Sakala Services Act"
+      },
+      "verified_claims": [
+        {
+          "claim": "Falls under BBMP South Zone Ward 151",
+          "status": "verified",
+          "basis": "PIN 560034"
+        }
+      ],
+      "unverified_claims": [],
+      "authoritative_sources": [],
+      "disclaimer": "Verified with BBMP South Division."
+    },
+    "complaint_subject": "Urgent cleanup of commercial garbage black-spot at Koramangala 80ft Road",
+    "complaint_body": "To BBMP SWM Health Officer, Ward 151 Koramangala. Immediate clearance and inspection of bulk commercial waste dumping requested.",
+    "status": "in_progress",
+    "endorsements_count": 14,
+    "created_at": "2026-10-21T09:30:00.000Z",
+    "updated_at": "2026-10-22T14:15:00.000Z"
+  },
+  {
+    "id": "REP-DEMO-DEL-01",
+    "issue_title": "Overflowing Public Dhalao and Littering at Dwarka Sector 12",
+    "category": "overflowing_bin",
+    "problem_summary": "Open municipal dhalao waste storage shed completely packed; domestic plastic and green waste spilling onto the main road near metro pillar.",
+    "input_types": [
+      "text",
+      "image"
+    ],
+    "location_json": {
+      "city": "New Delhi",
+      "neighborhood": "Dwarka Sector 12",
+      "address": "Near Sector 12 Metro Station, Sector 12 Dwarka",
+      "landmark": "Opposite DDA Market Complex",
+      "latitude": 28.5921,
+      "longitude": 77.046,
+      "postcode": "110075",
+      "ward_number": 43,
+      "ward_name": "Dwarka Sector 12",
+      "source": "user_provided",
+      "user_confirmation_required": false
+    },
+    "evidence_json": {
+      "user_reported_facts": [
+        "MCD compactor truck has not arrived for two days.",
+        "Waste spilling onto two lanes of the arterial road during morning peak rush."
+      ],
+      "visible_image_observations": [
+        "Covered masonry dhalao overflowing onto asphalt road.",
+        "Substantial quantity of single-use plastic bags and wet kitchen refuse."
+      ],
+      "ai_inferences": [
+        "High risk of monsoon drain clogging and collision hazard for cyclists."
+      ],
+      "uncertainties": []
+    },
+    "urgency_level": "potentially_urgent",
+    "urgency_details": {
+      "level": "potentially_urgent",
+      "reasons": [
+        "Traffic obstruction on major metro feeder road and health hazard for commuters."
+      ],
+      "limitations": [
+        "Visual observation and citizen report."
+      ]
+    },
+    "recommended_actions_json": [
+      {
+        "step": 1,
+        "action": "File ticket on MCD 311 App or call 155305",
+        "purpose": "Dispatches mechanical compactor truck under MCD 24-hr SLA."
+      }
+    ],
+    "missing_information": [],
+    "verification_json": {
+      "verification_status": "verified",
+      "authority_identified": {
+        "name": "Municipal Corporation of Delhi (MCD) - Department of Environment Management",
+        "portal_url": "https://mcdonline.nic.in",
+        "mobile_app": "MCD 311 Mobile App",
+        "helpline": "155305 / 011-23220010",
+        "established_sla": "24 to 48 hours for dhalao clearance"
+      },
+      "verified_claims": [
+        {
+          "claim": "Falls under MCD Najafgarh Zone, Ward 43",
+          "status": "verified",
+          "basis": "PIN 110075"
+        }
+      ],
+      "unverified_claims": [],
+      "authoritative_sources": [],
+      "disclaimer": "Verified against MCD Najafgarh Zonal Directory."
+    },
+    "complaint_subject": "Urgent Clearance of Dhalao Waste at Dwarka Sector 12 Metro Road",
+    "complaint_body": "To Assistant Commissioner (Sanitation), MCD Najafgarh Zone. Request immediate compactor vehicle deployment to clear dhalao at Dwarka Sector 12.",
+    "status": "ready_to_submit",
+    "endorsements_count": 18,
+    "created_at": "2026-10-22T08:10:00.000Z",
+    "updated_at": "2026-10-22T08:10:00.000Z"
+  },
+  {
+    "id": "REP-DEMO-DEL-02",
+    "issue_title": "Blocked Surface Drain with Debris at Lajpat Nagar Central Market",
+    "category": "blocked_drainage",
+    "problem_summary": "Stormwater drain clogged with plastic cups, food styrofoam, and market silt resulting in stagnant wastewater pooling on street.",
+    "input_types": [
+      "text",
+      "image"
+    ],
+    "location_json": {
+      "city": "New Delhi",
+      "neighborhood": "Lajpat Nagar",
+      "address": "Central Market, Block 2, Near 3C's Cineplex",
+      "landmark": "Near Pushpa Market Corner",
+      "latitude": 28.5683,
+      "longitude": 77.2435,
+      "postcode": "110024",
+      "ward_number": 58,
+      "ward_name": "Lajpat Nagar",
+      "source": "user_provided",
+      "user_confirmation_required": false
+    },
+    "evidence_json": {
+      "user_reported_facts": [
+        "Waterlogged pavement causing foul smell and mosquito breeding.",
+        "Market shoppers forced to wade through unhygienic runoff."
+      ],
+      "visible_image_observations": [
+        "Open drain grate choked with solid waste and black sludge.",
+        "Dark stagnant water accumulating around footpath curbs."
+      ],
+      "ai_inferences": [
+        "Immediate mosquito breeding hazard (Dengue/Chikungunya risk)."
+      ],
+      "uncertainties": []
+    },
+    "urgency_level": "needs_prompt_attention",
+    "urgency_details": {
+      "level": "needs_prompt_attention",
+      "reasons": [
+        "Stagnant runoff and drainage blockage in dense retail cluster."
+      ],
+      "limitations": [
+        "Visual observation and citizen report."
+      ]
+    },
+    "recommended_actions_json": [
+      {
+        "step": 1,
+        "action": "Report to MCD Central Zone DEM Sanitation Inspector",
+        "purpose": "Deploy suction machine and manual desilting crew."
+      }
+    ],
+    "missing_information": [],
+    "verification_json": {
+      "verification_status": "verified",
+      "authority_identified": {
+        "name": "Municipal Corporation of Delhi (MCD) - Central Zone",
+        "portal_url": "https://mcdonline.nic.in",
+        "mobile_app": "MCD 311 Mobile App",
+        "helpline": "155305",
+        "established_sla": "24 hours for open drain desilting"
+      },
+      "verified_claims": [
+        {
+          "claim": "Falls under MCD Central Zone Ward 58",
+          "status": "verified",
+          "basis": "PIN 110024"
+        }
+      ],
+      "unverified_claims": [],
+      "authoritative_sources": [],
+      "disclaimer": "Verified with MCD Central Zone SWM division."
+    },
+    "complaint_subject": "Desilting and clearance of blocked drain at Lajpat Nagar Central Market",
+    "complaint_body": "To DEM Sanitary Inspector, MCD Central Zone. Immediate unclogging of market drain requested.",
+    "status": "submitted_to_authority",
+    "endorsements_count": 11,
+    "created_at": "2026-10-21T11:45:00.000Z",
+    "updated_at": "2026-10-22T10:00:00.000Z"
+  },
+  {
+    "id": "REP-DEMO-BOM-01",
+    "issue_title": "Uncollected Street Waste Blackspot at Lokhandwala Andheri West",
+    "category": "uncollected_garbage",
+    "problem_summary": "Garbage dump accumulating near residential gate on 4th Cross Road; morning dumper truck missed collection for 48 hours.",
+    "input_types": [
+      "text",
+      "image"
+    ],
+    "location_json": {
+      "city": "Mumbai",
+      "neighborhood": "Andheri West",
+      "address": "4th Cross Road, Lokhandwala Complex, Andheri West",
+      "landmark": "Near Highland Park Entrance",
+      "latitude": 19.1416,
+      "longitude": 72.8256,
+      "postcode": "400053",
+      "ward_number": 64,
+      "ward_name": "Andheri West (Lokhandwala)",
+      "source": "user_provided",
+      "user_confirmation_required": false
+    },
+    "evidence_json": {
+      "user_reported_facts": [
+        "Uncollected refuse piling up outside apartment boundary wall.",
+        "Strong foul odor affecting residents on lower floors."
+      ],
+      "visible_image_observations": [
+        "Decomposed kitchen waste and plastic bags covering 10 meters of roadside curb."
+      ],
+      "ai_inferences": [
+        "Violation of MCGM Cleanliness By-laws 2006."
+      ],
+      "uncertainties": []
+    },
+    "urgency_level": "needs_prompt_attention",
+    "urgency_details": {
+      "level": "needs_prompt_attention",
+      "reasons": [
+        "Proximity to residential gate and unhygienic conditions."
+      ],
+      "limitations": [
+        "Visual observation."
+      ]
+    },
+    "recommended_actions_json": [
+      {
+        "step": 1,
+        "action": "Lodge complaint on MyBMC 24x7 App or dial 1916",
+        "purpose": "Alerts K-West Ward SWM junior overseer."
+      }
+    ],
+    "missing_information": [],
+    "verification_json": {
+      "verification_status": "verified",
+      "authority_identified": {
+        "name": "Brihanmumbai Municipal Corporation (BMC / MCGM) - K-West Ward",
+        "portal_url": "https://portal.mcgm.gov.in",
+        "mobile_app": "MyBMC 24x7 App",
+        "helpline": "1916",
+        "established_sla": "24 hours for street waste clearance"
+      },
+      "verified_claims": [
+        {
+          "claim": "Falls under BMC K-West Ward, Paliram Road jurisdiction",
+          "status": "verified",
+          "basis": "PIN 400053"
+        }
+      ],
+      "unverified_claims": [],
+      "authoritative_sources": [],
+      "disclaimer": "Verified with MCGM K-West Ward."
+    },
+    "complaint_subject": "Clearance of unattended garbage at Lokhandwala 4th Cross Road",
+    "complaint_body": "To Assistant Commissioner, K-West Ward, BMC. Urgent disposal of waste at Lokhandwala Complex requested.",
+    "status": "ready_to_submit",
+    "endorsements_count": 23,
+    "created_at": "2026-10-22T06:40:00.000Z",
+    "updated_at": "2026-10-22T06:40:00.000Z"
+  },
+  {
+    "id": "REP-DEMO-BOM-02",
+    "issue_title": "Illegal Construction Debris Dumping at Bandra West Hill Road",
+    "category": "illegal_dumping",
+    "problem_summary": "Over 4 tonnes of broken concrete, plaster rubble, and ceramic tiles dumped overnight onto public footpath near residential lane.",
+    "input_types": [
+      "text",
+      "image"
+    ],
+    "location_json": {
+      "city": "Mumbai",
+      "neighborhood": "Bandra West",
+      "address": "Hill Road, Near Mehboob Studio, Bandra West",
+      "landmark": "Near St. Martin Road Corner",
+      "latitude": 19.0538,
+      "longitude": 72.8285,
+      "postcode": "400050",
+      "ward_number": 98,
+      "ward_name": "Bandra West (Hill Road)",
+      "source": "user_provided",
+      "user_confirmation_required": false
+    },
+    "evidence_json": {
+      "user_reported_facts": [
+        "Commercial renovation debris dumped surreptitiously by tipper truck at 2 AM.",
+        "Footpath completely impassable; senior citizens forced onto road."
+      ],
+      "visible_image_observations": [
+        "Extensive mound of crushed masonry, broken tiles, and cement dust bags."
+      ],
+      "ai_inferences": [
+        "Severe violation of Construction & Demolition (C&D) Waste Management Rules 2016."
+      ],
+      "uncertainties": []
+    },
+    "urgency_level": "potentially_urgent",
+    "urgency_details": {
+      "level": "potentially_urgent",
+      "reasons": [
+        "Severe pedestrian blockage on busy transit corridor and airborne silica dust hazard."
+      ],
+      "limitations": [
+        "Visual observation and citizen report."
+      ]
+    },
+    "recommended_actions_json": [
+      {
+        "step": 1,
+        "action": "Report to BMC H-West Ward Debris Management Cell & Police",
+        "purpose": "Deploy JCB excavator for heavy clearance and inspect nearby renovation sites for violators."
+      }
+    ],
+    "missing_information": [],
+    "verification_json": {
+      "verification_status": "verified",
+      "authority_identified": {
+        "name": "Brihanmumbai Municipal Corporation (BMC / MCGM) - H-West Ward",
+        "portal_url": "https://portal.mcgm.gov.in",
+        "mobile_app": "MyBMC 24x7 App",
+        "helpline": "1916 / 022-26422311",
+        "established_sla": "48 hours for heavy debris clearance"
+      },
+      "verified_claims": [
+        {
+          "claim": "Falls under BMC H-West Ward jurisdiction",
+          "status": "verified",
+          "basis": "PIN 400050"
+        }
+      ],
+      "unverified_claims": [],
+      "authoritative_sources": [],
+      "disclaimer": "Verified with MCGM H-West Ward."
+    },
+    "complaint_subject": "Illegal C&D Waste Dumping on Hill Road Footpath, Bandra West",
+    "complaint_body": "To Assistant Commissioner, H-West Ward, BMC. Request immediate JCB removal of construction debris.",
+    "status": "resolved",
+    "resolution_proof": {
+      "verified_at": "2026-10-23T06:00:00.000Z",
+      "verifier": "BMC H-West Sanitary Squad",
+      "note": "Footpath completely cleared with JCB and washed."
+    },
+    "endorsements_count": 31,
+    "created_at": "2026-10-20T14:20:00.000Z",
+    "updated_at": "2026-10-23T06:10:00.000Z"
+  },
+  {
+    "id": "REP-DEMO-MAA-01",
+    "issue_title": "Overflowing Public Waste Bins near Gandhi Nagar Adyar",
+    "category": "overflowing_bin",
+    "problem_summary": "Two large municipal compactor bins overflowing with organic and domestic waste outside public school gate in Adyar.",
+    "input_types": [
+      "text",
+      "image"
+    ],
+    "location_json": {
+      "city": "Chennai",
+      "neighborhood": "Adyar",
+      "address": "1st Main Road, Gandhi Nagar, Adyar",
+      "landmark": "Near St. Michael's School Gate",
+      "latitude": 13.0067,
+      "longitude": 80.2575,
+      "postcode": "600020",
+      "ward_number": 173,
+      "ward_name": "Adyar (Gandhi Nagar)",
+      "source": "user_provided",
+      "user_confirmation_required": false
+    },
+    "evidence_json": {
+      "user_reported_facts": [
+        "Garbage spilling onto the approach road where schoolchildren walk.",
+        "Uncollected for two days; cattle and stray dogs foraging."
+      ],
+      "visible_image_observations": [
+        "Two green Urbaser/GCC bins filled beyond capacity, trash scattered 12ft around."
+      ],
+      "ai_inferences": [
+        "Public health hazard near educational institution."
+      ],
+      "uncertainties": []
+    },
+    "urgency_level": "potentially_urgent",
+    "urgency_details": {
+      "level": "potentially_urgent",
+      "reasons": [
+        "School zone hygiene compromise and cattle scattering waste into traffic."
+      ],
+      "limitations": [
+        "Visual report."
+      ]
+    },
+    "recommended_actions_json": [
+      {
+        "step": 1,
+        "action": "Lodge grievance on Namma Chennai App or dial 1913",
+        "purpose": "Alerts Greater Chennai Corporation Zone 13 Conservancy Inspector."
+      }
+    ],
+    "missing_information": [],
+    "verification_json": {
+      "verification_status": "verified",
+      "authority_identified": {
+        "name": "Greater Chennai Corporation (GCC) - Solid Waste Management",
+        "portal_url": "https://chennaicorporation.gov.in",
+        "mobile_app": "Namma Chennai App",
+        "helpline": "1913",
+        "established_sla": "24 hours under GCC Citizen Charter"
+      },
+      "verified_claims": [
+        {
+          "claim": "Falls under GCC Zone 13 Adyar, Ward 173",
+          "status": "verified",
+          "basis": "PIN 600020"
+        }
+      ],
+      "unverified_claims": [],
+      "authoritative_sources": [],
+      "disclaimer": "Verified with GCC Zone 13."
+    },
+    "complaint_subject": "Urgent Clearance of Compactor Bins at Gandhi Nagar 1st Main Road, Adyar",
+    "complaint_body": "To Zonal Officer, Zone 13 (Adyar), Greater Chennai Corporation. Immediate clearance of overflowing bins outside school gate requested.",
+    "status": "ready_to_submit",
+    "endorsements_count": 16,
+    "created_at": "2026-10-22T08:00:00.000Z",
+    "updated_at": "2026-10-22T08:00:00.000Z"
+  },
+  {
+    "id": "REP-DEMO-HYD-01",
+    "issue_title": "Construction Waste Dumping and Littering at Madhapur Hitec City",
+    "category": "illegal_dumping",
+    "problem_summary": "Extensive dumping of plasterboard, crushed granite, and discarded food containers along road leading to IT park in Madhapur.",
+    "input_types": [
+      "text",
+      "image"
+    ],
+    "location_json": {
+      "city": "Hyderabad",
+      "neighborhood": "Hitec City / Madhapur",
+      "address": "Ayyappa Society Main Road, Madhapur",
+      "landmark": "Near Meridian School Corner",
+      "latitude": 17.4483,
+      "longitude": 78.3915,
+      "postcode": "500081",
+      "ward_number": 106,
+      "ward_name": "Hitec City / Madhapur",
+      "source": "user_provided",
+      "user_confirmation_required": false
+    },
+    "evidence_json": {
+      "user_reported_facts": [
+        "Unregistered trucks dumping building rubble under cover of darkness.",
+        "Dust blown into open food stalls and tech commuter pathways."
+      ],
+      "visible_image_observations": [
+        "Concrete debris heaps and mixed commercial refuse blocking pedestrian pavement."
+      ],
+      "ai_inferences": [
+        "Violation of GHMC Solid Waste Management Rules and Air Quality standards."
+      ],
+      "uncertainties": []
+    },
+    "urgency_level": "needs_prompt_attention",
+    "urgency_details": {
+      "level": "needs_prompt_attention",
+      "reasons": [
+        "Pedestrian pathway encroachment and particulate pollution in dense employment hub."
+      ],
+      "limitations": [
+        "Visual report."
+      ]
+    },
+    "recommended_actions_json": [
+      {
+        "step": 1,
+        "action": "Report via GHMC MyGHMC App or dial 040-21111111",
+        "purpose": "Directs Serilingampally Zonal Enforcement & Vigilance squad."
+      }
+    ],
+    "missing_information": [],
+    "verification_json": {
+      "verification_status": "verified",
+      "authority_identified": {
+        "name": "Greater Hyderabad Municipal Corporation (GHMC) - Serilingampally Zone",
+        "portal_url": "https://www.ghmc.gov.in",
+        "mobile_app": "MyGHMC Mobile App",
+        "helpline": "040-21111111 / 100",
+        "established_sla": "48 hours under GHMC Citizen Charter"
+      },
+      "verified_claims": [
+        {
+          "claim": "Falls under GHMC Serilingampally Zone, Ward 106",
+          "status": "verified",
+          "basis": "PIN 500081"
+        }
+      ],
+      "unverified_claims": [],
+      "authoritative_sources": [],
+      "disclaimer": "Verified with GHMC West Zone SWM."
+    },
+    "complaint_subject": "Illegal Debris Dumping at Ayyappa Society Road, Madhapur",
+    "complaint_body": "To Zonal Commissioner, GHMC Serilingampally. Immediate removal of dumped construction debris and enforcement inspection requested.",
+    "status": "ready_to_submit",
+    "endorsements_count": 12,
+    "created_at": "2026-10-22T10:15:00.000Z",
+    "updated_at": "2026-10-22T10:15:00.000Z"
+  },
+  {
+    "id": "REP-DEMO-PNQ-01",
+    "issue_title": "Garbage Accumulation on Paud Road Kothrud",
+    "category": "uncollected_garbage",
+    "problem_summary": "Uncollected domestic waste pile beside municipal transformer on Paud Road; stray dogs scattering plastics near residential societies.",
+    "input_types": [
+      "text",
+      "image"
+    ],
+    "location_json": {
+      "city": "Pune",
+      "neighborhood": "Kothrud",
+      "address": "Paud Road, Near Vanaz Metro Station",
+      "landmark": "Opposite More Supermarket",
+      "latitude": 18.5074,
+      "longitude": 73.8077,
+      "postcode": "411038",
+      "ward_number": 31,
+      "ward_name": "Kothrud (Paud Road)",
+      "source": "user_provided",
+      "user_confirmation_required": false
+    },
+    "evidence_json": {
+      "user_reported_facts": [
+        "Ghanta gadi missed regular morning collection for two days.",
+        "Foul smell spreading into nearby housing society flats."
+      ],
+      "visible_image_observations": [
+        "Mixed domestic waste bags piled against electrical substation fence."
+      ],
+      "ai_inferences": [
+        "Fire hazard due to proximity with electrical transformer."
+      ],
+      "uncertainties": []
+    },
+    "urgency_level": "potentially_urgent",
+    "urgency_details": {
+      "level": "potentially_urgent",
+      "reasons": [
+        "Proximity to live electrical infrastructure and decomposing waste."
+      ],
+      "limitations": [
+        "Visual report."
+      ]
+    },
+    "recommended_actions_json": [
+      {
+        "step": 1,
+        "action": "File ticket on PMC Care App or dial 1800 1030 222",
+        "purpose": "Alerts Kothrud-Bavdhan Ward Health Inspector."
+      }
+    ],
+    "missing_information": [],
+    "verification_json": {
+      "verification_status": "verified",
+      "authority_identified": {
+        "name": "Pune Municipal Corporation (PMC) - Solid Waste Management",
+        "portal_url": "https://pmc.gov.in",
+        "mobile_app": "PMC Care App",
+        "helpline": "1800 1030 222 / 020-25501000",
+        "established_sla": "24 hours under PMC Citizen Charter"
+      },
+      "verified_claims": [
+        {
+          "claim": "Falls under PMC Kothrud-Bavdhan Ward 31",
+          "status": "verified",
+          "basis": "PIN 411038"
+        }
+      ],
+      "unverified_claims": [],
+      "authoritative_sources": [],
+      "disclaimer": "Verified with PMC Solid Waste Department."
+    },
+    "complaint_subject": "Urgent cleanup of waste dump near electrical transformer, Paud Road Kothrud",
+    "complaint_body": "To Health Officer, Kothrud Ward Office, PMC. Immediate clearance of waste near electrical substation requested.",
+    "status": "ready_to_submit",
+    "endorsements_count": 15,
+    "created_at": "2026-10-22T07:45:00.000Z",
+    "updated_at": "2026-10-22T07:45:00.000Z"
+  },
+  {
+    "id": "REP-DEMO-CCU-01",
+    "issue_title": "Severe Drain Clogging and Plastic Waste at Salt Lake Sector V",
+    "category": "blocked_drainage",
+    "problem_summary": "Major open drainage canal choked with disposable plastic glasses, thermocol food boxes, and construction silt near College More tech hub.",
+    "input_types": [
+      "text",
+      "image"
+    ],
+    "location_json": {
+      "city": "Kolkata",
+      "neighborhood": "Salt Lake / Bidhannagar",
+      "address": "College More, Sector V, Bidhannagar",
+      "landmark": "Near Webel More Crossing",
+      "latitude": 22.5726,
+      "longitude": 88.4312,
+      "postcode": "700091",
+      "ward_number": 128,
+      "ward_name": "Salt Lake / Bidhannagar",
+      "source": "user_provided",
+      "user_confirmation_required": false
+    },
+    "evidence_json": {
+      "user_reported_facts": [
+        "Rainwater unable to drain; street flooded after 20 minutes of rain.",
+        "Street vendors dumping untreated plastic directly into canal."
+      ],
+      "visible_image_observations": [
+        "Surface canal surface covered completely with floating plastics and dark sludge."
+      ],
+      "ai_inferences": [
+        "High waterlogging and disease vector risk for IT workforce corridor."
+      ],
+      "uncertainties": []
+    },
+    "urgency_level": "needs_prompt_attention",
+    "urgency_details": {
+      "level": "needs_prompt_attention",
+      "reasons": [
+        "Canal choke causing rapid urban waterlogging and mosquito breeding."
+      ],
+      "limitations": [
+        "Visual report."
+      ]
+    },
+    "recommended_actions_json": [
+      {
+        "step": 1,
+        "action": "Report to Bidhannagar Municipal Corporation (BMC) Control Room",
+        "purpose": "Deploy canal desilting crane and mechanical rake."
+      }
+    ],
+    "missing_information": [],
+    "verification_json": {
+      "verification_status": "verified",
+      "authority_identified": {
+        "name": "Kolkata Municipal Corporation (KMC) / Bidhannagar Municipal Corporation",
+        "portal_url": "https://www.kmcgov.in",
+        "mobile_app": "KMC Mobile App",
+        "helpline": "033-2286-1212",
+        "established_sla": "48 hours under West Bengal Municipal Citizen Charter"
+      },
+      "verified_claims": [
+        {
+          "claim": "Falls under Bidhannagar Municipal Corporation Sector V jurisdiction",
+          "status": "verified",
+          "basis": "PIN 700091"
+        }
+      ],
+      "unverified_claims": [],
+      "authoritative_sources": [],
+      "disclaimer": "Verified with BMC/KMC SWM authorities."
+    },
+    "complaint_subject": "Canal Desilting and Waste Clearance at Salt Lake Sector V College More",
+    "complaint_body": "To Municipal Commissioner, Bidhannagar Municipal Corporation. Urgent mechanical clearance of drainage canal requested.",
+    "status": "ready_to_submit",
+    "endorsements_count": 21,
+    "created_at": "2026-10-21T16:00:00.000Z",
+    "updated_at": "2026-10-22T08:30:00.000Z"
+  }
+]
