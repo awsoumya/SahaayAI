@@ -26,7 +26,10 @@ Garbage accumulation, overflowing waste bins, illegal dumping of construction de
 - **Voice & Audio Notes:** 
   - Live Indian English / Hindi speech recognition with duration counter and live editable transcript.
   - Native audio file uploader (`.mp3`, `.wav`, `.m4a`, `.webm`, `.ogg`) passed directly to Gemini's audio model.
-- **Interactive OpenStreetMap Leaflet Map:** Click or drag anywhere on the map to pinpoint the exact dump location, with automated reverse-geocoding into real street names, neighborhoods, cities, and postal codes.
+- **Interactive OpenStreetMap Leaflet Map:** 
+  - Instant area/locality search across Indian metros (Delhi NCR, Mumbai, Bengaluru, Chennai, Hyderabad, Pune, Kolkata).
+  - Quick Metro Jump chips for 1-click navigation.
+  - Drag or click to pinpoint exact dumps with reverse-geocoding into real street names, neighborhoods, wards, and PIN codes.
 
 ### B. Structured Gemini Multimodal Intelligence
 - Integrates the official Google Gen AI SDK: `@google/genai`.
@@ -38,6 +41,7 @@ Garbage accumulation, overflowing waste bins, illegal dumping of construction de
   - Transparent Urgency Rating: `routine`, `needs_prompt_attention`, `potentially_urgent` with explicit limitations
   - Numbered, rationalized Action Plan
   - Inline Missing Information prompt
+  - Object detection bounding boxes highlighting waste clusters
 
 ### C. Independent Source Verification Engine
 - **Decoupled from model claims:** Does not blindly trust AI-generated assertions.
@@ -49,37 +53,29 @@ Garbage accumulation, overflowing waste bins, illegal dumping of construction de
   - **GCC (Chennai)** — Greater Chennai Corporation (1913)
   - **GHMC (Hyderabad)** — Greater Hyderabad Municipal Corporation (040-21111111)
   - **PMC (Pune)** — Pune Municipal Corporation (1800 1030 222)
-  - **KMC (Kolkata)** — Kolkata Municipal Corporation (155357)
-- Displays verified sources, retrieval timestamps, what the source actually confirms, and citizen charter turnaround SLAs (24-48 hours).
-- Honestly flags unverified claims with: *“Verification pending — we could not confirm this information from an available authoritative source.”*
+  - **KMC (Kolkata)** — Kolkata Municipal Corporation (033-2286-1212)
+- PIN Code to Ward Directory mapping 25+ major Indian PIN codes to exact administrative wards, junior health inspectors, and SWM maintenance depots.
 
-### D. Bilingual Statutory Complaint Generator & Citizen Mobilization
-- **Bilingual Drafts:** Generates both an English formal letter and a formal **हिन्दी (Hindi) शिकायत पत्र** adhering to standard Indian governmental petition formatting ("सेवा में, श्रीमान सहायक आयुक्त / मुख्य सफाई निरीक्षक...").
-- **WhatsApp Community Mobilization:** One-click **Share on WhatsApp** button to broadcast structured alerts to local Resident Welfare Association (RWA) and ward groups.
-- **Formal Printable Petition:** Browser print styling for physical submission at zonal municipal offices.
-- One-click **Copy to Clipboard** and **Download as .txt**.
-- Direct link to open the verified official municipal portal or mobile app.
-- **Honest Submissions:** Never fabricates fake confirmation numbers. Explains why citizen mobile/OTP authentication is required by government portals and delivers a pre-formatted draft.
-
-### E. Civic Resolution Lifecycle & Accountability (My Reports)
-- Full local database persistence with atomic writes.
-- **Dynamic SLA Countdown Timer:** Live tracking against the 24-hr/48-hr statutory Citizen Charter guarantee with alerts when breached.
-- **Before & After Resolution Verification:** Allows citizens to attach a photographic proof of clearance and inspection notes when marking reports as `resolved`.
-- Search and filter by category, city, or status (`draft`, `needs_more_info`, `verification_pending`, `ready_to_submit`, `submitted`, `resolved`).
+### D. Actionable Resolution & Citizen Advocacy
+- **6 Indic Language Complaint Drafts:** Automatically generates formal municipal grievance letters in English, Hindi (हिंदी), Kannada (ಕನ್ನಡ), Tamil (தமிழ்), Telugu (తెలుగు), and Marathi (मराठी).
+- **Text-to-Speech:** Listen to complaint drafts read aloud in Indic languages.
+- **Official Direct Actions:** 1-click links to official grievance portals (BBMP Sahaaya, MCD 311, MyBMC, Swachhata-MoHUA), official WhatsApp helplines, and Twitter/X tagging.
+- **Citizen Endorsements & Printables:** +1 co-signatures for community escalation, printable A4 PDF complaint petitions, and QR placards for physical posting at black-spots.
+- **Before / After Resolution Verification:** Upload post-clearance photograph proof with date stamps to verify municipal turnaround.
 
 ---
 
 ## 3. Technology Stack
 
-- **Frontend:** React 18, Vite, TypeScript, Leaflet, Exifr, Lucide React icons, Custom Accessible Design System.
-- **Backend:** Node.js, Express.js, Multer (media handling), CORS, Dotenv.
-- **AI SDK:** Official `@google/genai` (Google Gen AI JavaScript SDK).
-- **Persistence:** High-durability file-backed atomic JSON store (SQLite-compatible data model).
-- **Testing:** Node.js native test runner (`node --test`).
+- **Frontend:** React 18, Vite, TypeScript, Lucide Icons, Leaflet.js
+- **Backend:** Node.js, Express.js REST API, Multer (in-memory image & audio processing)
+- **AI / LLM:** Google Gen AI SDK (`@google/genai`), Gemini 2.5 Flash
+- **Persistence:** Atomic JSON Document Store with zero external database dependencies
+- **Styling:** Custom accessible design system adhering to Indian municipal visual identity
 
 ---
 
-## 4. Getting Started
+## 4. Getting Started Locally
 
 ### Prerequisites
 - Node.js (v18 or higher; v24 recommended)
@@ -96,33 +92,54 @@ GEMINI_MODEL=gemini-2.5-flash
 
 > **Note on Demonstration Mode:** If `GEMINI_API_KEY` is omitted, Sahaay AI automatically operates in **High-Fidelity Demonstration Mode**. All 5 hackathon scenarios, validation schemas, verification logic, and UI workflows function out of the box with zero external dependencies!
 
----
-
-## 5. Running the Application
-
-### Development Mode (Both Frontend & Backend)
-From the project root:
+### Running Locally
 ```bash
+# Install root dependencies
+npm install
+
+# Start both backend and frontend concurrently
 npm run dev
 ```
 - **Frontend:** http://localhost:5173
 - **Backend API:** http://localhost:3001
 - **API Health:** http://localhost:3001/api/health
 
-### Production Build & Preview
-```bash
-# Build the React Vite client
-npm run build
-
-# Start production server & preview
-npm start
-```
-
 ### Running Automated Tests
-Run the automated test suite covering verification logic, schema compliance, and database operations:
 ```bash
 npm test
 ```
+
+---
+
+## 5. 🚀 One-Click Cloud Deployment
+
+Sahaay AI is production-ready and configured to deploy as a unified full-stack service (Express serves both the API and the React frontend on a single port).
+
+### Deploy to Render (Recommended - Free Tier)
+1. Go to [Render Dashboard](https://dashboard.render.com).
+2. Click **New +** → **Web Service**.
+3. Connect your repository: `https://github.com/awsoumya/SahaayAI`.
+4. Configure the settings:
+   - **Environment:** `Node`
+   - **Build Command:** `npm install && npm run build`
+   - **Start Command:** `node server/src/index.js`
+5. Under **Environment Variables**, add:
+   - `NODE_ENV` = `production`
+   - `GEMINI_API_KEY` = *(Optional: your Google AI Studio key)*
+   - `GEMINI_MODEL` = `gemini-2.5-flash`
+6. Click **Create Web Service**. Your app will be live at `https://<your-service>.onrender.com`!
+
+### Deploy to Railway
+1. Go to [Railway.app](https://railway.app).
+2. Click **New Project** → **Deploy from GitHub repo**.
+3. Select `awsoumya/SahaayAI`.
+4. Railway will automatically detect the `Procfile` and deploy your app.
+
+### Deploy to Vercel
+1. Go to [Vercel Dashboard](https://vercel.com).
+2. Click **Add New...** → **Project** and import `awsoumya/SahaayAI`.
+3. Vercel automatically uses the included [`vercel.json`](./vercel.json).
+4. Click **Deploy**.
 
 ---
 

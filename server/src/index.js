@@ -112,25 +112,29 @@ db.seedIfEmpty([
 // Mount API routes
 app.use('/api', apiRouter);
 
-// Root informational endpoint
-app.get('/', (req, res) => {
-  res.json({
-    name: 'Sahaay AI API',
-    tagline: 'From everyday problems to real-world action.',
-    version: '1.0.0',
-    endpoints: {
-      health: 'GET /api/health',
-      analyze: 'POST /api/analyze',
-      verify: 'POST /api/verify',
-      reports: 'GET /api/reports, POST /api/reports',
-      authorities: 'GET /api/authorities'
+// Serve static client assets in production if client/dist exists
+const clientDistPath = path.resolve(__dirname, '../../client/dist');
+app.use(express.static(clientDistPath));
+
+// For SPA routing, redirect all non-API requests to index.html
+app.get('*', (req, res, next) => {
+  if (req.path.startsWith('/api')) return next();
+  const indexHtml = path.join(clientDistPath, 'index.html');
+  res.sendFile(indexHtml, (err) => {
+    if (err) {
+      res.json({
+        name: 'Sahaay AI API',
+        tagline: 'From everyday problems to real-world action.',
+        status: 'healthy',
+        note: 'Build client with npm run build to serve static frontend.'
+      });
     }
   });
 });
 
-// 404 handler
-app.use((req, res) => {
-  res.status(404).json({ success: false, error: `Endpoint ${req.method} ${req.url} not found.` });
+// 404 handler for unmatched API routes
+app.use('/api/*', (req, res) => {
+  res.status(404).json({ success: false, error: `API endpoint ${req.method} ${req.url} not found.` });
 });
 
 // Central error handler
